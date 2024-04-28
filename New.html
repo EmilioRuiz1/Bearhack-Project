@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDICAL CHATBOT</title>
+    <link rel="stylesheet" href="Newlayout.css" />
+    <script src="./openai-test.js" defer></script>
+  </head>
+
+  <body>
+   
+
+    <div class="title-container">
+      <!-- Title and cross image -->
+      <img src="Cross.png" alt="cross picture" width="150" height="150" />
+        <div class="avatar">
+            <div class="avatar-container avatar-size">
+            <img src="Baymax.gif" class="avatar-image"/>
+            </div>
+        </div>
+      <h1 class="page-title">MEDICAL CHATBOT</h1>
+    </div>
+
+    <!-- Output box where response is shown -->
+    <div class="output">
+      <div id="output-box" class="output-box">
+        <p id="response"></p>
+      </div>
+    </div>
+
+    <!-- Container for user interaction -->
+    <div class="container">
+      <h1>What question do you have?</h1>
+
+      <!-- Flex-box containing form with input box and submit button -->
+      <div class="flex-box">
+        <!-- Form with input box and submit button -->
+        <form id="input-form">
+          <label for="user-input">Enter your message:</label>
+          <input
+            type="text"
+            id="user-input"
+            name="user-input"
+            placeholder="Type here..."
+          />
+          <!-- <button type="submit" id="submit">Submit</button> -->
+          <!-- Add the ID "submit" -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
